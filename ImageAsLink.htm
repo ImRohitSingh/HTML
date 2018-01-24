@@ -1,21 +1,37 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>ImageIsALink</title>
+		<title>ImageAsALink</title>
 		<meta charset="UTF-8">
 		<style>
+		mark
+		{
+			background-color:orange;
+		}  <!-- unique style for all marked elements -->
+		p.BB
+		{
+			color:rgb(255,255,255);
+			font-family:verdana;
+			background-color:rgb(0,0,10);
+		}  <!-- unique style for all paragraphs that uses the id 'BB' -->
 		#pAA
 		{
 			text-decoration:underline;
-			color:rgb(200,200,200);
-		}   <!-- unique style for all elements that uses this id -->
+			color:rgb(150,150,255);
+			border:4px solid mediumseagreen;
+			padding:4px;
+			font-size-40px;
+		}   <!-- unique style for all paragraphs that uses the id 'AA' -->
 		</style>
 	</head>
 	<body>
-		<p id="pAA">Click on the <mark>image</mark> to reach the code...</p>
-		         <!-- A paragraph that uses the id defined in the 'head' section -->
-		<br>
-		<a href="https://github.com/ImRohitSingh/Java/blob/master/PrimeCheck.java" target="_blank">
+		<p class="BB">Copy the program the appears after you are directed to the link. I'll be discussing it earlier next month.</p>
+			<!-- A paragraph that uses the id 'BB' defined in the 'head' section -->
+		<hr>   <!-- A horizontal break -->
+		<p id="pAA">Click on the <mark>image</mark> to reach to the code...</p>
+		         <!-- A paragraph that uses the id 'AA' defined in the 'head' section -->
+		<br>   <!-- A line break -->
+		<a href="https://github.com/ImRohitSingh/BasicPrograms/blob/master/PrimeCheck.java" target="_blank">
 				<!-- 'href' attribute is provided with the link that directs to a code which
 					checks if a number is prime or not... -->
 			<img src="https://i.pinimg.com/736x/3a/13/50/3a13506f9ddd4eed3824d99c8a1e254f--number-theory-poster-download.jpg" alt="CheckingForPrime" width="200" height="180" style="border:0;">
