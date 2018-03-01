@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Forms</title>
+		<meta charset="UTF-8">
+		<style>
+			fieldset
+			{
+				color:rgb(100,50,63);
+				background-color:mediumseagreen;
+				border:2px solid blue;
+				padding:30px;			
+			}
+			select
+			{
+				color:dodgerblue;
+			}
+		</style>
+	</head>
+	<body style="background-color:pink;">
+		<form action="C:\xampp\htdocs\PHP\Accept.php" target="_blank" method="POST" autocomplete="on">
+		<fieldset>
+			<legend style="color:yellow"><h2>Personal Details:-</h2></legend>
+			<input list="honorfics" name="titles" placeholder="Honorfics">
+				<datalist id="honorfics">
+					<option value="Mr." selected>
+					<option value="Miss">
+					<option value="Lord">
+					<option value="Sir">
+					<option value="Dr">
+					<option value="DR">
+					<option value="Madam">
+					<option value="Ms">
+					<option value="Lady">
+					<option value="Others">
+				</datalist><br>
+			<br>
+			<br>
+			First Name:<br>
+			<input type="text" name="name" required><br>
+			Middle Name:<br>
+			<input type="text" name="name"><br>
+			Last Name:<br>
+			<input type="text" name="name" required><br>
+			Age:<br>
+			<input type="text" name="age" required><br>
+			Select an image:<br>
+			<input type="file" name="img" required>
+ 			<input type="submit" name="upload" value="Upload" multiple>
+			<br>
+			<br>
+			Sex:<br>
+			<input type="radio" name="gender" value="male" unchecked required><b>Male</b><br>
+			<input type="radio" name="gender" value="female" unchecked required><b>Female</b><br>
+			<input type="radio" name="gender" value="other" unchecked required><b>Other</b><br>
+			<br>
+			Nationality:<br>
+			<select name="nationality" size="2">
+				<option value="american">American</option>
+				<option value="europian">Europian</option>
+				<option value="indian" selected>Indian</option>
+				<option value="others">Others</option>
+			</select>
+			<br>
+			<br>
+			Birthday:<br>
+			<input type="datetime-local" name="bday" min="1960-12-31" max="2018-03-01" required>
+			<br>
+			<br>
+			State:<br>
+			<input list="states" name="states">
+				<datalist id="states">
+					<option value="Bihar">
+					<option value="Delhi">
+					<option value="Hyderabad">
+					<option value="Karnataka">
+					<option value="Mumbai">
+					<option value="West Bengal">
+					<option value="Others">
+				</datalist>
+			<br>
+			Pin code:<br>
+			<input type="text" name="pin_code" pattern="[0-9]{6}" title="Seven digit pin code." required>
+			<br>
+			<br>
+		</fieldset>
+		<br>
+		<br>
+		<fieldset>	
+			<legend style="color:yellow"><h2>Other Informations:-</h2></legend>
+			Email:<br>
+			<input type="email" name="email">
+			<br>
+			<br>
+			Height:<br>
+			<input type="number" name="height" min="2" max="7" value="5.5">
+			<br>
+			<br>
+			Riding Preferences:<br>
+			<input type="checkbox" name="vehicle" value="bike" unchecked><b>Bikes</b><br>
+			<input type="checkbox" name="vehicle" value="car" unchecked><b>Cars</b><br>
+			<input type="checkbox" name="vehicle" value="cycle" unchecked><b>Cycles</b><br>
+			<input type="checkbox" name="vehicle" value="cycle" unchecked><b>Other</b><br>
+			<br>
+			<br>
+			Favorite Color:<br>
+			<input type="color" name="favcol" value="#ddaa99"><br>
+			<br>
+			<br>
+			<legend><i>Write About Yourself...</i></legend>
+			<textarea name="message" style="width:500px;height:100px;">
+			Type here...
+			</textarea>
+			<br>
+			<br>
+			Enter your homepage:<br>
+			<input type="url" name="homepage">
+			<br>
+			<br>
+			<button type="button" onclick="alert('Rohit is happy to have you..:)')">Click Here</button>
+			<br>
+			<br>
+			<input type="submit" name="Submit" value="Confirm">
+			<br>
+			<br>
+			<input type="reset">
+		</fieldset>
+		</form>
+	</body>
+</html>
